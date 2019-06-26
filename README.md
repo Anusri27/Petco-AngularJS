@@ -9,5 +9,5 @@ This website will help people either wanting to find a foster for their pet or w
 ## TECHNOLOGIES USED
 
 - AngularJS
--HTML
--CSS
+- HTML
+- CSS
