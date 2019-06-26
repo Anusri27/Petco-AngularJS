@@ -1,0 +1,116 @@
+<div style=" margin: 50px">
+<div class="contactus"  style="width:60% ; float: left ">
+	<div class="head" style="color: #CD6155 ;font-size: 4em" align="center">Contact Us</div>
+	<p style="font-size: 1.5em ; margin-right:30px;margin-left: 30px;margin-bottom: 30px float: left" align="center" >have any question to ask us? <br>fill the following details and we'll get back to you soon.</p>
+	<form class="contactform" method="POST">
+		<div class="deets">
+		<label class="info" for="name">Name</label>
+		<input type="text" name="name" placeholder="Name" class="form-control uname">
+		</div>
+		<div class="deets">
+		<label class="info" for="phone">Phone</label>
+		<input type="tel" name="phone" placeholder="Phone" class="form-control ph">
+		</div>
+		<div class="deets">
+		<label class="info" for="email">Email</label>
+		<input type="text" name="email" placeholder="Email" class="form-control email">
+		</div>
+		<div class="deets" align="center">
+		<label class="info" for="message">Message</label>
+		<textarea name="message" placeholder="message" class="form-control message"></textarea> 
+		</div>
+		<div class="btn-block">
+          <button type="submit" ng-click="savetheData()">Submit</button>
+        </div>
+</div>
+<div class="information" style="width: 40%;float: right">
+	<div class="head" align="center">Info</div>
+	<div class="info" style="margin: 30px" align="center">
+	<p style="color: white; font-size: 1.5em">
+	<img src="images/mail.png" width="40">
+	petco@gmail.com</p>
+</div>
+	<div class="info" style="margin: 30px" align="center">
+	<p style="color: white; font-size: 1.5em">
+	<img src="images/phone.png" width="40">
+	+(91-22)27456381</p>
+</div>
+
+
+<style >
+	html{
+		background-color: black;
+		color: white;
+}
+
+.information .head{
+	 margin: 25px;
+  font-size: 4em;
+  color: #CD6155;
+}
+.contactus .head{
+  margin: 25px;
+  font-size: 4em;
+}
+.contactus .deets .info{
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+input, textarea{
+	background-color: black;
+	border:none;
+	color: grey;
+	width: 100%
+}
+
+.uname:hover{
+	color: #E74C3C;
+}
+.ph:hover{
+	color: #E74C3C;
+}
+.message:hover{
+	color: #E74C3C;
+}
+.email:hover{
+	color: #E74C3C;
+}
+.form-control{
+	-webkit-box-shadow: none !important;
+
+}
+.contactus .deets {
+    border: none !important;
+    width:500px;
+    height: 50px;
+
+    margin-left:150px;
+    padding-left: 5px ;
+}
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background: #B03A2E;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background: #E74C3C  ;
+      }
+img{
+	width: 200px;
+}
+</style>

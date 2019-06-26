@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app='mypet'>
+<head>
+    <meta charset="utf-8" />
+    <title>Petco</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+ <header>
+        <div class="wrap">
+            <a href="#!"><img class="logo" src="images/petco.png" width="200" style="margin: 10px " align="center" /></a>
+         <nav>
+                <ul>
+                    <li><a id="workBtn" href="#!/" ng-class="{activeSmall:part == 'pets'}" >Pets Available</a></li>
+                    <li><a id="privacyBtn" href="#!/foster" ng-class="{activeSmall:part == 'foster'}">Foster my pet</a></li>
+                    <li><a id="aboutBtn" href="#!/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
+                    <li><a id="contactBtn" href="#!/contact" ng-class="{activeSmall:part == 'contact'}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<div style="position:relative">
+        <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+    </div>
+    </html>
+
+

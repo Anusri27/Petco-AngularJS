@@ -1,0 +1,24 @@
+<div  style="font-size: 4em; color: #CD6155" align="center">Pets Available</div>
+	<div class="card" ng-repeat="pet in pets"  style="background-color: #CACFD2   ; color: black; width: 25%"  >
+		<img ng-src="{{pet.img}}" style="width:250px; height:250px;margin: 2px">
+		<p>Name: {{pet.Name}}<br>
+		Category: {{pet.Category}}<br>
+		Breed: {{pet.Breed}}<br>
+		Age: {{pet.Age}}</p>
+	</div>
+
+<style>
+	.card{
+		display:inline-block;
+ border-radius: 15px;
+  width:250px;
+  height:400px;
+  margin:40px;
+ text-align: center;
+  padding:1%;
+  cursor:pointer;
+	}
+
+
+</style>
+
