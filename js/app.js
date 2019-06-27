@@ -22,11 +22,7 @@ var app = angular.module('mypet',[]).
           activetab: 'Contactus'
         }).
         otherwise({ redirectTo: '/' });
-    }]).run(['$rootScope', '$http', '$browser', '$timeout', "$route", function ($scope, $http, $browser, $timeout, $route)
-        $scope.$on("$routeChangeSuccess", function (scope, next, current) {
-          $scope.part = $route.current.activetab;
-        });
-        }]);
+    }])
 app.config(['$locationProvider', function($location) {
     $location.hashPrefix('!');
 }]);
